@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisbon Chair Shop</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            margin: 50px auto;
+        }
+
+        .header-text-box {
+            width: 55%;
+        }
+
+        .header-text-box h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        .header-text {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        header > img {
+            width: 40%;
+            height: 300px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #087f5b;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #066b4c;
+        }
+
+        section {
+            margin: 80px auto;
+        }
+
+        section > h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .grid-3-cols {
+            display: flex;
+            gap: 30px;
+        }
+
+        .grid-3-cols > div {
+            flex: 1;
+        }
+
+        .features-title {
+            margin: 15px 0;
+        }
+
+        .testimonial-section {
+            background-color: #087f5b;
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .testimonial-section .grid-3-cols img {
+            width: 35%;
+            height: 180px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .testimonial-box {
+            flex: 1;
+        }
+
+        .testimonial-text {
+            margin: 20px 0;
+        }
+
+        .chair {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            background-color: white;
+        }
+
+        /* CHAIR IMAGE */
+        .chair-image {
+            position: relative;
+            height: 220px;
+        }
+
+        .chair-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* SALE TAG */
+        .sale {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+
+            background-color: #e63946;
+            color: white;
+
+            width: 55px;
+            height: 55px;
+
+            border-radius:15%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 1.2;
+        }
+
+        .chair-box {
+            padding: 25px;
+        }
+
+        .chair-box h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .chair-details {
+            list-style: none;
+        }
+
+        .chair-details li {
+            margin-bottom: 12px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .chair-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #087f5b;
+            color: white;
+            padding: 25px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HERO SECTION -->
+
+    <header>
+
+        <div class="header-text-box">
+
+            <h1>
+                We design and build better chairs, for a better life
+            </h1>
+
+            <p class="header-text">
+                In a small shop in the heart of Lisbon, we spend our days
+                relentlessly perfecting the chair. The result is a perfect blend
+                of beauty and comfort, that will have a lasting impact on your health.
+            </p>
+
+            <a class="btn" href="#">Shop chairs</a>
+
+        </div>
+
+        <img src="https://www.ikea.com/in/en/images/products/lisabo-chair-ash-tallmyra-white-black__1243660_pe920705_s5.jpg?f=xl"
+             alt="Chair">
+
+    </header>
+
+
+    <!-- FEATURES SECTION -->
+
+    <section>
+
+        <h2>What makes our chairs special</h2>
+
+        <div class="grid-3-cols">
+
+            <div>
+                <p class="features-title">
+                    <strong>Science meets design</strong>
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+
+            <div>
+                <p class="features-title">
+                    <strong>Maximum comfort</strong>
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+
+            <div>
+                <p class="features-title">
+                    <strong>Durable materials</strong>
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TESTIMONIAL -->
+
+    <section class="testimonial-section">
+
+        <div class="grid-3-cols">
+
+            <img src="https://cdn.prod.website-files.com/686d3b55385e7b905b01d3a5/6960a0699981877e64bedf02_Ergonomic-Office-Chair-vs-Normal-Chair.jpg"
+                 alt="People sitting on chairs">
+
+            <div class="testimonial-box">
+
+                <h2>
+                    "We couldn't live without these chairs anymore"
+                </h2>
+
+                <blockquote class="testimonial-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </blockquote>
+
+                <p>
+                    — Rakshitha and Niharika
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BESTSELLING CHAIRS -->
+
+    <section>
+
+        <h2>Our bestselling chairs</h2>
+
+        <div class="grid-3-cols">
+
+
+            <!-- CHAIR 1 -->
+
+            <figure class="chair">
+
+                <div class="chair-image">
+
+                    <img src="https://www.ikea.com/in/en/images/products/lisabo-chair-ash-tallmyra-white-black__1243660_pe920705_s5.jpg?f=xl"
+                         alt="Chair">
+
+                    <span class="sale">
+                        SALE<br>25%
+                    </span>
+
+                </div>
+
+                <div class="chair-box">
+
+                    <h3>The Laid Back</h3>
+
+                    <ul class="chair-details">
+
+                        <li>Leisure and relaxing</li>
+                        <li>Comfortable for 4h</li>
+                        <li>Vegan leather</li>
+                        <li>Weighs 16 kg</li>
+
+                    </ul>
+
+                    <div class="chair-price">
+
+                        <strong>250€</strong>
+
+                        <a href="#" class="btn">
+                            Add to cart
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </figure>
+
+
+            <!-- CHAIR 2 -->
+
+            <figure class="chair">
+
+                <div class="chair-image">
+
+                    <img src="https://www.ikea.com/in/en/images/products/lisabo-chair-ash-tallmyra-white-black__1243660_pe920705_s5.jpg?f=xl"
+                         alt="Chair">
+
+                </div>
+
+                <div class="chair-box">
+
+                    <h3>The Laid Back</h3>
+
+                    <ul class="chair-details">
+
+                        <li>Leisure and relaxing</li>
+                        <li>Comfortable for 8h</li>
+                        <li>Vegan leather</li>
+                        <li>Weighs 16 kg</li>
+
+                    </ul>
+
+                    <div class="chair-price">
+
+                        <strong>250€</strong>
+
+                        <a href="#" class="btn">
+                            Add to cart
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </figure>
+
+
+            <!-- CHAIR 3 -->
+
+            <figure class="chair">
+
+                <div class="chair-image">
+
+                    <img src="https://www.ikea.com/in/en/images/products/lisabo-chair-ash-tallmyra-white-black__1243660_pe920705_s5.jpg?f=xl"
+                         alt="Chair">
+
+                </div>
+
+                <div class="chair-box">
+
+                    <h3>The Laid Back</h3>
+
+                    <ul class="chair-details">
+
+                        <li>Leisure and relaxing</li>
+                        <li>Comfortable for 4h</li>
+                        <li>Vegan leather</li>
+                        <li>Weighs 16 kg</li>
+
+                    </ul>
+
+                    <div class="chair-price">
+
+                        <strong>250€</strong>
+
+                        <a href="#" class="btn">
+                            Add to cart
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </figure>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Lisbon Chair Shop</p>
+    </footer>
+</div>
+</body>
+</html>
